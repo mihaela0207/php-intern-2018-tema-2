@@ -15,8 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/', function () {
-    return view('demo');
-});
-
+Route::resource('/companies','CompaniesController');
+Route::resource('/employees','EmployeesController');
